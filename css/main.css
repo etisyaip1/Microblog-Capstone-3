@@ -7,7 +7,11 @@ body > a{
     display: inline-block;
     margin: 1rem;
     padding: 1rem;
-    background-color: black;
+    background-color: purple;
     color: white;
     text-decoration: none;
+}
+body{ 
+    background-color: rgb(15, 15, 96);
+    color: whitesmoke;
 }
