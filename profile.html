@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="./css/main.css">
-
     <script src="./js/main.js"></script>
     <script src="./js/signup.js"></script>
 </head>
 <body>
-    <a href="signup.html">Sign-Up</a>
-    <a href="login.html">Login</a>
+    <header>
+        <h1>Edit User Profile <span id="username"></span></h1>
+    </header>
+    <a href="index.html">Home</a>
     <a href="messages.html">Message</a>
     <main>
-        <label><span>Username/Email</span><input id="username" type="email"></label>
-        <label><span>Full Name</span><input id="fullName"></label>
-        <label><span>Password</span><input id="password" type="password"></label>
-        <button id="signUpButton">Sign-Up!</button>
-        <div id="output">?</div>
+        <main>
+            <label for="fullName">
+                <span>Full Name:</span>
+                <input type="text" id="fullName">
+            </label>
+            <label for="bioText">
+                <span>Biography:</span>
+                <textarea id="bioText"></textarea>
+            </label>
+            <label for="passwordInput">
+                <span>Password:</span>
+                <input type="password" id="passwordInput">
+            </label>
+            <button id="saveUserProfile">Save User Profile</button>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-4b99b839-772f-4a2a-8765-4083e49df653" data-elfsight-app-lazy></div>  
     </main>
 </body>
 </html>

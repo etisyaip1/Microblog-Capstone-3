@@ -51,3 +51,13 @@ BONUS/ EXTRA CREDIT
     - profile icons using Gravatar (create a hash #email, so it's not in url to get the picture in there)
     - edit usere profile (bio)
     - bootstrap icons peppered throughout 
+    
+Updated Requirements differing from PDF:
+View Profile (username, bio)
+Update Profile (PUT /api/user) (bio, password, fullName) TEXTAREA tag recommended for bio.
+Remember to use separate New Message/Post not on the Profile like the PDF says.
+Create a Like for a message
+Remove a Like from a message (adding an unlike button) (requires comparing your login name to names on the likes)
+Polish. Improve the HTML, CSS, and even JS.
+ 
+Must do at least one of the PDF's Optional Feature Ideas

@@ -99,3 +99,45 @@ async function sendText(text){
     const object = await response.json();
     return object;
 }
+
+async function sendLike(postId){
+    const response = await fetch(
+        BASE_URL + "/api/likes", { // endpoint for likes
+        method: "POST", //CREATE
+        headers: headersWithAuth(),
+        body: `{"postId":"${postId}"}` //make json string by hand instead of stringify
+    });
+    const object = await response.json();
+    return object;
+}
+async function deleteLike(likeId){
+    const response = await fetch(
+        BASE_URL + "/api/likes/" + likeId, { // endpoint for likes
+        method: "DELETE", //REMOVE
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
+}
+
+async function getProfile() {
+    const response = await fetch(
+        BASE_URL + "/api/users/" + localStorage.username, {
+        method: "GET",
+        headers: headersWithAuth(),
+    });
+    const object = await response.json();
+    return object;
+}
+
+
+async function saveProfile(payload){
+    const response = await fetch(
+        BASE_URL + "/api/users/" + localStorage.username, { // endpoint for messages/posts
+        method: "PUT", //UPDATE
+        headers: headersWithAuth(),
+        body: JSON.stringify(payload)
+    });
+    const object = await response.json();
+    return object;
+}
