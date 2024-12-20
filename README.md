@@ -29,7 +29,7 @@ Flurish prioritizes safety and inclusivity, creating a secure environment where 
 
 ## Send New Message
 - **Send New Message/ Text:** Sending a text to the message board on it's on page once logged in. 
-![home](img/sendnewtext.png)
+![home](img/sendnewmessage.png)
 
 ## Profile/ Edit User Profile
 - **Edit User Profile:** Updating authorized users profile bios. Refill form with full name, new bio, and your password. 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title> New Message </title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js"></script>
     <script src="./js/signup.js"></script>
@@ -90,25 +90,23 @@
         }
 
         button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: purple;
+            width: 270px;
+            padding: 10px 15px;
+            background-color: rgb(62, 127, 237);
             color: white;
-            border: none;
-            border-radius: 5px;
+            border: 4px solid;
+            border-radius: 10px;
+            font-size: 1rem;
             cursor: pointer;
-        }
-
-        button:hover {
-            background-color: darkviolet;
+            box-shadow: 0px 4px 6px rgba(128, 116, 204, 0.2);
+            transition: all 0.3s ease;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+
     <nav class="navbar">
         <a class="navbar-brand" href="profile.html">
             <img src="img/flurishlogo.jpg" alt="Logo" width="180" height="180">
@@ -116,32 +114,26 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="messages.html">Message</a>
+            <a href="profile.html">Edit User Profile</a>
         </div>
     </nav>
 
-    <!-- Main Content -->
+
     <main class="main-content">
         <header>
-            <h1>Edit User Profile <span id="username"></span></h1>
+            <h1>Ready to send a new message? <span id="username"></span></h1>
         </header>
         <form>
-            <label for="fullName">
-                <span>Full Name:</span>
-                <input type="text" id="fullName" placeholder="Enter your full name">
+            <label for="textInput">
+                <span>Enter your message:</span>
+                <input type="text" id="textInput" placeholder="Type your message here">
             </label>
-            <label for="bioText">
-                <span>Biography:</span>
-                <textarea id="bioText" placeholder="Tell us about yourself"></textarea>
-            </label>
-            <label for="passwordInput">
-                <span>Password:</span>
-                <input type="password" id="passwordInput" placeholder="Enter your password">
-            </label>
-            <button id="saveUserProfile" type="button">Save User Profile</button>
+            <button id="sendTextButton" type="button">Send Text</button>
         </form>
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-4b99b839-772f-4a2a-8765-4083e49df653" data-elfsight-app-lazy></div>
     </main>
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-4b99b839-772f-4a2a-8765-4083e49df653" data-elfsight-app-lazy></div>
+
 
 </body>
 

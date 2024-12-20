@@ -16,36 +16,111 @@
       color: whitesmoke;
       border: 1px solid purple;
     }
-
     body {
-      background-color: rgb(15, 15, 96);
-      color: whitesmoke;
-    }
-    .nav-links a {
-    display: inline-block;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: purple;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    }
-  </style>
+            background-color: rgb(15, 15, 96);
+            color: whitesmoke;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border-bottom: 2px solid purple;
+        }
+
+        .navbar img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 1rem;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: darkviolet;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .main-content h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        label span {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 300px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid d-flex align-items-center">
-      <a class="navbar-brand" href="messages.html">
-          <img src="img/flurishlogo.jpg" alt="Logo" width="180" height="180" class="d-inline-block">
-      </a>
-      <div class="nav-links d-flex ms-auto">
-          <a href="index.html" class="nav-item mx-2">Home</a>
-          <a href="signup.html" class="nav-item mx-2">Sign-Up!</a>
-          <a href="login.html" class="nav-item mx-2">Login</a>
-          <a href="messages.html" class="nav-item mx-2">Message</a>
-      </div>
-  </div>
-</nav>
+
+<body>
+
+    <nav class="navbar">
+        <a class="navbar-brand" href="profile.html">
+            <img src="img/flurishlogo.jpg" alt="Logo" width="180" height="180">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="messages.html">Message</a>
+        </div>
+    </nav>
   <main>
     <div class="container">
       <div class="d-flex align-items-center justify-content-center min-vh-100">
