@@ -13,9 +13,9 @@ body > a {
 }
 
 body { 
+    text-align: center;
     background-color: rgb(15, 15, 96);
-    color: whitesmoke;
-    overflow: hidden;
+    color: whitesmoke;  
     background: #000;
     transform-style: preserve-3d;
     perspective: 1000px; /* Fixed invalid 'include' */
