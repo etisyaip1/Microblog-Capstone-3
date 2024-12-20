@@ -11,4 +11,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
         //SUCCESS
         window.location.href = "messages.html";
     });//end click
+    
 }); //end loaded

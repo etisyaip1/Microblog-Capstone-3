@@ -89,6 +89,15 @@ async function getMessageList() {
     return object;
 }
 
+async function logout() {
+    const response = await fetch(
+        BASE_URL + "/auth/logout" , {
+        method: "GET",
+        headers: headersWithAuth(),
+    });
+    return response;
+}
+
 async function sendText(text){
     const response = await fetch(
         BASE_URL + "/api/posts", { // endpoint for messages/posts

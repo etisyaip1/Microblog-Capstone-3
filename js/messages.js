@@ -44,6 +44,12 @@ function getMessage(m) {
       console.log(`Sort By changed to: ${sortBy}`);
       fetchPosts(sortBy); // Fetch and display posts sorted by the selected option
     });
+    logoutButton.addEventListener("click",async ()=>{
+      const result = await logout();
+  
+      //SUCCESS
+      window.location.href = "login.html";
+  });//end click
   });
    
   // Fetch posts from the API and render them
@@ -97,3 +103,4 @@ function getMessage(m) {
   function getLoginData() {
     return JSON.parse(localStorage.getItem("loginData")) || {};
   }
+  
