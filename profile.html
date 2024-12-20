@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,137 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js"></script>
     <script src="./js/signup.js"></script>
+    <style>
+        body {
+            background-color: rgb(15, 15, 96);
+            color: whitesmoke;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border-bottom: 2px solid purple;
+        }
+
+        .navbar img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 1rem;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: darkviolet;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .main-content h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        label span {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
+            width: 300px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Edit User Profile <span id="username"></span></h1>
-    </header>
-    <a href="index.html">Home</a>
-    <a href="messages.html">Message</a>
-    <main>
+
+    <nav class="navbar">
+        <a class="navbar-brand" href="profile.html">
+            <img src="img/flurishlogo.jpg" alt="Logo" width="180" height="180">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="messages.html">Message</a>
+        </div>
+    </nav>
+
+    
+    <main class="main-content">
+        <header>
+            <h1>Edit User Profile <span id="username"></span></h1>
+        </header>
+        <form>
             <label for="fullName">
                 <span>Full Name:</span>
-                <input type="text" id="fullName">
+                <input type="text" id="fullName" placeholder="Enter your full name">
             </label>
-            <br>
             <label for="bioText">
                 <span>Biography:</span>
-                <textarea id="bioText"></textarea>
+                <textarea id="bioText" placeholder="Tell us about yourself!"></textarea>
             </label>
-            <br>
             <label for="passwordInput">
                 <span>Password:</span>
-                <input type="password" id="passwordInput">
+                <input type="password" id="passwordInput" placeholder="Enter your password">
             </label>
-            <br>
-            <button id="saveUserProfile">Save User Profile</button>
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-4b99b839-772f-4a2a-8765-4083e49df653" data-elfsight-app-lazy></div>  
+            <button id="saveUserProfile" type="button">Save User Profile</button>
+        </form>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-4b99b839-772f-4a2a-8765-4083e49df653" data-elfsight-app-lazy></div>
     </main>
+
 </body>
+
 </html>

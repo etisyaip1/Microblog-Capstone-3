@@ -21,14 +21,31 @@
       background-color: rgb(15, 15, 96);
       color: whitesmoke;
     }
+    .nav-links a {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    }
   </style>
 </head>
-
-<body>
-  <a href="index.html">Home</a>
-  <a href="signup.html">Sign-Up!</a>
-  <a href="login.html">Login</a>
-  <a href="messages.html">Message</a>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid d-flex align-items-center">
+      <a class="navbar-brand" href="messages.html">
+          <img src="img/flurishlogo.jpg" alt="Logo" width="180" height="180" class="d-inline-block">
+      </a>
+      <div class="nav-links d-flex ms-auto">
+          <a href="index.html" class="nav-item mx-2">Home</a>
+          <a href="signup.html" class="nav-item mx-2">Sign-Up!</a>
+          <a href="login.html" class="nav-item mx-2">Login</a>
+          <a href="messages.html" class="nav-item mx-2">Message</a>
+      </div>
+  </div>
+</nav>
   <main>
     <div class="container">
       <div class="d-flex align-items-center justify-content-center min-vh-100">

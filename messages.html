@@ -9,20 +9,62 @@
     <script src="./js/main.js"></script>
     <script src="./js/messages.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <style>
+        body {
+            background-color: rgb(15, 15, 96);
+            color: whitesmoke;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f8f9fa; /* Light background for contrast */
+            border-bottom: 2px solid purple;
+        }
+
+        
+        .nav-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: darkviolet;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="index.html">Home</a>
-    <a href="signup.html">Sign-Up!</a>
-    <a href="login.html">Login</a>
-    <a href="new.html">Send New Message</a>
-    <a href="profile.html">Edit User Profile</a>
+    <nav class="navbar bg-body-tertiary">
+        <a class="navbar-brand" href="profile.html">
+            <img src="img/flurishlogo.jpg" alt="Logo" width="180" height="180">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="new.html">Send New Message</a>
+            <a href="profile.html">Edit User Profile</a>
+        </div>
+    </nav>
     <div style="margin-bottom: 10px;">
         <label for="sortOptions">Sort By:</label>
         <select id="sortOptions" class="dropdown">
-            <option value="newest">Newest Post </option>
-            <option value="oldest">Oldest Post </option>
-            <option value="likes">Most Flutters </option>
+            <option value="newest">Newest Post</option>
+            <option value="oldest">Oldest Post</option>
+            <option value="likes">Most Flutters</option>
         </select>
     </div>
 
@@ -30,10 +72,9 @@
         <div id="output"></div>
     </main>
 
+    <audio controls></audio>
+
     <div class="elfsight-app-4b99b839-772f-4a2a-8765-4083e49df653" data-elfsight-app-lazy></div>
-    <audio controls>
-        <source src="audio/your-audio-file.mp3" type="audio/mpeg">
-    </audio>
 </body>
 
 </html>
